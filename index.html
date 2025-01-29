@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaView Documentation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+
+  <link rel="icon" href="lunch.png" type="image/x-icon">
+  <script>
+    // Change navbar color on scroll
+    window.addEventListener('scroll', function() {
+        let navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+</script>
+
+
+
+  <style>
+    /* Ensure navbar links remain visible */
+    .navbar-nav .nav-link {
+        color: white !important;
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link.active {
+        color: #f8f9fa !important;
+        text-decoration: underline;
+    }
+
+
+
+
+
+    /* Navbar styling */
+.navbar {
+    background-color: #007bff !important; /* Custom blue background */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.navbar.scrolled {
+    background-color: #0056b3 !important; /* Darker blue background when scrolled */
+}
+
+/* For better spacing below the navbar */
+.container.mt-5.pt-5 {
+    margin-top: 100px;
+}
+
+/* Styling for navbar links */
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    padding: 10px 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #0056b3; /* Darker hover effect */
+    border-radius: 5px;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-lg">
+    <div class="container">
+        <a class="navbar-brand text-white" href="index.html">AquaView Docs</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link text-white" href="#project-overview">Project Overview</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#installation-guide">Installation</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#user-guide">User Guide</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#contribution-guide">Contributing</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#licensing">Licensing</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#maintenance">Maintenance</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-5 pt-5">
+
+    
+    <!-- Project Overview -->
+
+<section id="project-overview" class="mb-5">
+    <h2>Project Overview</h2>
+    <hr class="border-primary">
+
+    <p><strong>Welcome to AquaView</strong>, an educational tool designed to simplify water quality analysis and inspire sustainable solutions. AquaView is more than just an application—it embodies a vision for making water quality data accessible, actionable, and impactful. Developed with a deep passion for environmental engineering, this project aims to bridge the gap between complex data and real-world decision-making.</p>
+
+    <h3>Key Features</h3>
+    <ul>
+        <li>📂 <strong>Seamless File Uploads:</strong> Supports CSV and XLSX formats, ensuring compatibility with standard data analysis tools.</li>
+        <li>🔎 <strong>Missing Value Detection:</strong> Automatically identifies and flags missing data points for better accuracy.</li>
+        <li>📊 <strong>Data Visualization:</strong> 
+            <ul>
+                <li>Density plots and histograms to explore data distribution.</li>
+                <li>Time series analysis for tracking long-term trends.</li>
+            </ul>
+        </li>
+        <li>📈 <strong>Correlation Analysis:</strong> Understand relationships between water quality parameters.</li>
+        <li>💧 <strong>Water Quality Index (WQI):</strong> Computes and interprets WQI to assess overall water quality.</li>
+        <li>🤖 <strong>Gemini AI Integration:</strong> Advanced predictive insights for deeper water quality analysis.</li>
+        <li>💬 <strong>Interactive Q&A:</strong> Engage with water quality data dynamically through in-app queries.</li>
+    </ul>
+
+    <h3>Vision Behind AquaView</h3>
+    <p>AquaView is a step forward in my journey as an environmental engineer. By developing this tool, I aim to make water quality analysis simple, educational, and effective for researchers, students, and professionals. Water quality is a crucial aspect of sustainability and public health, and with AquaView, users can make informed decisions backed by data.</p>
+
+    <h3>Invitation to Collaborate</h3>
+    <p>AquaView thrives on collaboration and innovation. Your feedback, ideas, and contributions are welcome! Whether you’re an environmental scientist, developer, or data analyst, let’s work together to improve this tool and create real-world impact in water management.</p>
+
+    <p>Thank you for supporting AquaView. Let’s take meaningful steps towards a sustainable future, one water sample at a time.</p>
+</section>
+
+
+    <!-- Installation Guide -->
+    
+<section id="installation-guide" class="mb-5">
+    <h2>Installation Guide</h2>
+    <hr class="border-primary">
+
+    <p>Follow the instructions below to install AquaView on your preferred platform.</p>
+
+    <p><strong>🔗 Download AquaView for Windows & Android:</strong>  
+        <a href="https://ahmed01ttfret.github.io/Aqua_View/" target="_blank">https://ahmed01ttfret.github.io/Aqua_View/</a>
+    </p>
+
+    <h3>📱 AquaView for Android</h3>
+    <p>To install AquaView on an Android device:</p>
+    <ol>
+        <li>Visit the <a href="https://ahmed01ttfret.github.io/Aqua_View/" target="_blank">AquaView Download Page</a>.</li>
+        <li>Download the latest **AquaView APK**.</li>
+        <li>Open the downloaded APK file.</li>
+        <li>If prompted, enable <strong>"Install from Unknown Sources"</strong> in your device settings.</li>
+        <li>Follow the on-screen instructions to complete the installation.</li>
+        <li>Once installed, open AquaView and start analyzing water quality data!</li>
+    </ol>
+
+    <h3>🖥️ AquaView for Windows</h3>
+    <p>To install AquaView on a Windows PC:</p>
+    <ol>
+        <li>Go to <a href="https://ahmed01ttfret.github.io/Aqua_View/" target="_blank">AquaView Download Page</a>.</li>
+        <li>Download the **AquaView Windows Installer (.exe)**.</li>
+        <li>Run the downloaded file and follow the setup wizard instructions.</li>
+        <li>Choose an installation directory and click <strong>Install</strong>.</li>
+        <li>Once installation is complete, launch AquaView from the Start Menu or Desktop shortcut.</li>
+    </ol>
+
+    <h3>System Requirements</h3>
+    <ul>
+        <li><strong>Android:</strong> Android 7.0 (Nougat) or higher, 100MB storage space.</li>
+        <li><strong>Windows:</strong> Windows 10 or higher, 4GB RAM, 200MB disk space.</li>
+    </ul>
+
+    <h3>Having Issues?</h3>
+    <p>If you encounter any installation issues, check the report an issue on <a href="https://ahmed01ttfret.github.io/Aqua_View/">GitHub</a>.</p>
+
+</section>
+
+
+
+
+
+
+    <!-- User Guide -->
+    
+<section id="user-guide" class="mb-5">
+    <h2>User Guide</h2>
+    <hr class="border-primary">
+
+            <h3 id="file-entry">1. File Entry</h3>
+        <p>This section explains how to upload your data files into AquaView.</p>
+        <p>AquaView accepts files in the <strong>.xlsx</strong> and <strong>.csv</strong> formats. To upload your data, follow these steps:</p>
+        <ol>
+            <li>Navigate to the <strong>Import</strong> tab.</li>
+            <li>Click the <strong>Add</strong> button to upload a file.</li>
+        </ol>
+        <p>The uploaded file must follow the following structure:</p>
+        <ul>
+            <li>The file must include a column labeled <strong>ID</strong> (this can be in any column of the file).</li>
+            <li>A column for <strong>Date/Time</strong> should also be included.</li>
+            <li>All columns, except the <strong>ID</strong> and <strong>Date/Time</strong>, should contain numerical values or null values.</li>
+        </ul>
+        <p><strong>Important:</strong> Import will be unsuccessful if the <strong>ID</strong> column is missing. Additionally, in-depth analysis cannot be performed without a <strong>Date/Time</strong> column.</p>
+        
+
+
+        <h3 id="configurations">2. Configurations</h3>
+        <p>Learn how to set up and configure AquaView to suit your preferences and needs.</p>
+        
+        <h4>Porting Data:</h4>
+        <p><strong>Select Data Source:</strong></p>
+        <ul>
+            <li>Click the <strong>"Source of Water"</strong> button on the <strong>"Import"</strong> tab.</li>
+            <li>Choose your water source from the provided dropdown list.</li>
+        </ul>
+        
+        <p><strong>Define Columns:</strong></p>
+        <ul>
+            <li>Select the columns containing <strong>"Date"</strong> and <strong>"ID"</strong> from the respective dropdown menus.</li>
+        </ul>
+        
+        <p><strong>Click "Continue":</strong> Proceed to the next step.</p>
+        
+        <h4>Important Notes:</h4>
+        <h5>Data Validation:</h5>
+        <p>Import will fail if:</p>
+        <ul>
+            <li>Incorrect configurations are made.</li>
+            <li>Non-numeric data is found in columns other than <strong>"Date"</strong> and <strong>"ID"</strong>.</li>
+        </ul>
+        
+        <h5>Water Quality Index (WQI) Calculation:</h5>
+        <p>To enable WQI calculation, follow these steps:</p>
+        <ul>
+            <li>Click the <strong>"Configuration"</strong> button.</li>
+            <li>Define which parameters correspond to specific parameters in the standards.</li>
+        </ul>
+        
+        <h5>WQI Configuration:</h5>
+        <p><strong>Standards:</strong></p>
+        <p>The system uses predefined standards. A default standard named <strong>"Parameters"</strong> is included. To customize or add standards:</p>
+        <ul>
+            <li>Go to the <strong>"Settings"</strong> page and click <strong>"Parameters and Standards."</strong></li>
+            <li>Click the <strong>"+" button</strong> on the app bar to add a new standard.</li>
+        </ul>
+        
+        <h5>Standard Format:</h5>
+        <p>Each standard entry should follow this format:</p>
+        <pre>
+        [parameter, unit, ideal, weight]
+        </pre>
+        <p><strong>Example:</strong> ["pH", "units", 7, 0.2]</p>
+        <ul>
+            <li><strong>parameter</strong>: Name of the parameter.</li>
+            <li><strong>unit</strong>: Unit of measurement.</li>
+            <li><strong>ideal</strong>: Ideal concentration value.</li>
+            <li><strong>weight</strong>: Significance weight of the parameter in WQI calculation.</li>
+        </ul>
+
+        
+
+
+        <h3 id="home-page">3. Home Page</h3>
+        <p>Overview of the home page layout and available navigation options.</p>
+        
+        <p>The Home Page is the central hub of AquaView, where you can view the most important aspects of your water quality data. Here’s a breakdown of the key features:</p>
+        
+        <h4>Imported Data:</h4>
+        <p>The home page displays the data you’ve uploaded. This includes a table showing the values for each parameter, as well as an overview of the dataset. The table will allow you to quickly check the data, and you can easily access additional analysis features.</p>
+        
+        <h4>Chart of Missing Values:</h4>
+        <p>On the home page, you will also see a chart that visually represents the missing values in your dataset. This allows you to quickly identify any data gaps and make necessary adjustments before further analysis.</p>
+        
+        <h4>Distribution Charts:</h4>
+        <p>In addition to the missing values chart, AquaView provides distribution charts (such as histograms or density plots) for each parameter. These charts help you visualize the spread and distribution of your data, allowing for better insights into trends and anomalies.</p>
+        
+        <p>With all these features, the home page serves as a comprehensive starting point for your water quality analysis, providing both an overview and tools for deeper exploration.</p>
+
+        
+        <h3 id="trends">4. Trends</h3>
+        <p>This section covers how to analyze trends in your data, such as time series and patterns.</p>
+        
+        <p>The "Trends" page in AquaView is designed to help you visualize and analyze changes in your data over time, and uncover potential patterns. Here are the key visualizations available:</p>
+        
+        <h4>Time Series Chart:</h4>
+        <p>The Time Series chart allows you to view how specific water quality parameters change over time. By plotting the data points based on the date or time column, you can identify any temporal trends or fluctuations in water quality.</p>
+        
+        <h4>Scatter Plot:</h4>
+        <p>The Scatter Plot displays the relationship between two parameters, allowing you to easily identify correlations or patterns in the data. This is useful for understanding how different water quality parameters interact with each other over time.</p>
+        
+        <h4>Heat Map:</h4>
+        <p>The Heat Map provides a visual representation of the state of each ID over time. It uses colors to show variations in the data, making it easy to identify trends, outliers, or irregularities in the dataset. This can be particularly helpful in spotting changes in water quality across different locations or times.</p>
+        
+        <h4>Time Series of Water Quality Index (WQI):</h4>
+        <p>A special Time Series chart is dedicated to visualizing the WQI over time. This chart helps track the overall water quality of your dataset and assess whether it meets predefined standards. It is an important tool for monitoring changes in water quality and identifying areas that may need attention.</p>
+        
+        <p>By using these tools, you can gain deeper insights into the trends and patterns within your water quality data, allowing for more informed decision-making and analysis.</p>
+
+        
+
+    <h3 id="insight-ai-note">5. Insight/AI Note</h3>
+<p>Explore the AI-powered insights and recommendations generated by AquaView based on your data.</p>
+
+<p>AquaView is equipped with **Gemini AI**, a powerful tool that analyzes your water quality data and provides valuable insights. This AI-driven feature summarizes the state of your water, making it easier for you to understand the overall quality and key trends without manual analysis.</p>
+
+<h4>Summarizing Water Quality:</h4>
+<p>Gemini AI examines your dataset and generates a concise summary of the water's condition. It highlights important aspects such as:</p>
+<ul>
+    <li>Overall water quality status (e.g., good, moderate, poor).</li>
+    <li>Key parameters affecting water quality.</li>
+    <li>Potential concerns or areas requiring attention based on the data trends.</li>
+</ul>
+
+<h4>Asking Questions:</h4>
+<p>With the interactive **Q&A** feature powered by Gemini AI, you can ask specific questions about your data. Whether you're looking for insights on trends, parameter correlations, or specific water quality assessments, you can easily engage with your dataset in a conversational way. Just type your question, and the AI will provide you with relevant answers and recommendations.</p>
+
+<p>This feature enhances the user experience by making data analysis more accessible and intuitive, allowing you to make informed decisions based on AI-powered insights.</p>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Contribution Guide -->
+<section id="contribution-guide" class="mb-5">
+    <h2>Contribution Guide</h2>
+    <hr class="border-primary">
+
+    <p>AquaView is open-source, and we welcome contributions! Here’s how you can help:</p>
+
+    <h3>How to Contribute</h3>
+    <ol>
+        <li>Fork the repository from <a href="https://github.com/Ahmed01ttfret/Aqua_View" target="_blank">GitHub</a>.</li>
+        <li>Clone your fork: <code>git clone https://github.com/your-username/Aqua_View.git</code></li>
+        <li>Create a new branch: <code>git checkout -b feature-name</code></li>
+        <li>Make your changes and test them.</li>
+        <li>Commit and push: <code>git push origin feature-name</code></li>
+        <li>Submit a pull request (PR) for review.</li>
+    </ol>
+
+    
+
+    <h3>Contact</h3>
+    <p>For questions, email <a href="mailto:am7727339@gmail.com">am7727339@gmail.com</a>.</p>
+
+    <p>Thank you for contributing! 🚀</p>
+</section>
+
+
+    <!-- Licensing & Acknowledgments -->
+   <!-- Licensing & Acknowledgments -->
+<section id="licensing" class="mb-5">
+    <h2>Licensing & Acknowledgments</h2>
+    <hr class="border-primary">
+
+    <h3>📜 AquaView - License</h3>
+    <p>AquaView is an <strong>educational tool</strong> designed to simplify water quality analysis and promote sustainable solutions.  
+       This application is provided as open-source software under the <strong>MIT License</strong>, encouraging learning, research, and innovation in environmental data analysis.</p>
+
+    <h4>🔖 License Type</h4>
+    <p>AquaView is licensed under the <strong>MIT License</strong>, allowing users to freely use, modify, and distribute the software while adhering to the following terms:</p>
+
+    <h4>✅ Permitted Uses</h4>
+    <ul>
+        <li>Free use, modification, and distribution of the software.</li>
+        <li>Personal, academic, and commercial use.</li>
+        <li>Integration with other projects for educational and research purposes.</li>
+    </ul>
+
+    <h4>❌ Restricted Uses</h4>
+    <ul>
+        <li>Selling the software as a standalone product without modifications.</li>
+        <li>Using the software for misleading or unauthorized commercial purposes.</li>
+        <li>Removing or altering copyright and attribution notices.</li>
+    </ul>
+
+    <h4>⚠️ Liability Disclaimer</h4>
+    <p>AquaView is provided <strong>"as-is"</strong> without any warranties, express or implied. The developer is not responsible for:</p>
+    <ul>
+        <li>Any incorrect interpretations of water quality data.</li>
+        <li>Any damages, losses, or legal consequences arising from the use of this software.</li>
+        <li>Any errors, bugs, or service interruptions.</li>
+    </ul>
+    <p>Users assume full responsibility for their use of AquaView. This software should not be used as a substitute for professional water quality assessments.</p>
+
+    <h4>👨‍💻 Attribution & Copyright</h4>
+    <p>AquaView is an original project developed by <strong>Ahmed Mohammed</strong>.<br>
+       Copyright <strong>© 2025 AquaView</strong>.<br>
+       This software may include third-party libraries licensed under their respective terms.</p>
+
+    <h4>📩 Contact Information</h4>
+    <p>For licensing inquiries, support, or collaboration opportunities, feel free to reach out:</p>
+    <p>📧 <a href="mailto:am7727339@gmail.com">am7727339@gmail.com</a></p>
+
+    <h3>🙏 Acknowledgments</h3>
+    <p>Special thanks to the contributors, testers, and supporters who helped bring AquaView to life.  
+       This project would not have been possible without the collaboration and dedication of the open-source community.</p>
+
+    <ul>
+        <li><strong>Libraries & Frameworks Used:</strong> Dart, Flutter</li>
+        <li><strong>AI Integration:</strong> Gemini AI for advanced water quality analysis</li>
+        <li><strong>Inspiration:</strong> Environmental sustainability and the need for accessible water quality assessment</li>
+    </ul>
+
+    <h4>🤝 Contribute</h4>
+    <p>Want to contribute? Check out the <a href="#contribution-guide">Contribution Guide</a> to see how you can help improve AquaView!</p>
+</section>
+
+    <!-- Maintenance & Updates -->
+  <!-- Maintenance & Updates -->
+<section id="maintenance" class="mb-5">
+    <h2>🔧 Maintenance & Updates</h2>
+    <hr class="border-primary">
+
+    <h3>📅 Update Schedule</h3>
+    <p>AquaView is continuously evolving to enhance its features, improve performance, and ensure compatibility with the latest technologies.</p>
+    <ul>
+        <li><strong>Minor Updates:</strong> Bug fixes, UI improvements, and performance optimizations (Released monthly).</li>
+        <li><strong>Major Updates:</strong> New features, integrations, and significant enhancements (Released quarterly).</li>
+    </ul>
+
+    <h3>🚀 Latest Version</h3>
+    <p>Stay up to date with the latest AquaView releases:</p>
+    <ul>
+        <li><strong>Current Version:</strong> <span id="latest-version">1.0.0</span></li>
+        <li><strong>Release Date:</strong> <span id="release-date">January 2025</span></li>
+        <li><strong>Changelog:</strong> View the latest updates in the <a href="#changelog">Changelog</a>.</li>
+    </ul>
+
+    <h3>🔄 How to Update</h3>
+    <p>To ensure you’re using the latest version of AquaView:</p>
+    <ol>
+        <li>Visit the official <a href="https://ahmed01ttfret.github.io/Aqua_View/" target="_blank">AquaView Download Page</a>.</li>
+        <li>Download the latest version for <strong>Windows</strong> or <strong>Android</strong>.</li>
+        <li>Follow the installation guide to update your software.</li>
+    </ol>
+
+    
+
+    <h3>💡 Feedback & Suggestions</h3>
+    <p>Your input matters! If you have suggestions, bug reports, or feature requests, feel free to:</p>
+    <ul>
+        <li>📧 Email us at <a href="mailto:am7727339@gmail.com">am7727339@gmail.com</a></li>
+        <li>🐛 Report bugs or suggest features on our <a href="https://github.com/Ahmed01ttfret/Aqua_View" target="_blank">GitHub Repository</a></li>
+    </ul>
+
+    <h3>🤝 Open-Source Contributions</h3>
+    <p>AquaView is open-source, and we welcome contributions from the community.  
+       If you're interested in helping, check out our <a href="#contribution-guide">Contribution Guide</a>.</p>
+
+    <p>Thank you for using and supporting AquaView! Together, we can make water quality analysis more accessible and impactful. 🌊</p>
+</section>
+
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 mt-5">
+    &copy; 2025 AquaView. All rights reserved.
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+
+
+
+
+</html>
